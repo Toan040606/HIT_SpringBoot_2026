@@ -1,4 +1,4 @@
-package root.orderpayingsystem;
+package root.orderpayingsystem.service;
 
 public class OrderService {
     private final IPaymentMethod paymentMethod;

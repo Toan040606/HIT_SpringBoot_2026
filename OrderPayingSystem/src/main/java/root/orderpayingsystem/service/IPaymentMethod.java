@@ -1,4 +1,4 @@
-package root.orderpayingsystem;
+package root.orderpayingsystem.service;
 
 public interface IPaymentMethod {
     void pay(double amount);

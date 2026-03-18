@@ -1,4 +1,6 @@
-package root.orderpayingsystem;
+package root.orderpayingsystem.service.impl;
+
+import root.orderpayingsystem.service.IPaymentMethod;
 
 public class MoMoPayment implements IPaymentMethod {
     @Override

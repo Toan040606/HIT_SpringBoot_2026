@@ -1,6 +1,8 @@
-package root.orderpayingsystem;
+package root.orderpayingsystem.service.impl;
 
-public class BankTransferPayment implements IPaymentMethod {
+import root.orderpayingsystem.service.IPaymentMethod;
+
+public class CashPayment implements IPaymentMethod {
     @Override
     public void pay(double amount) {
         System.out.println("Thanh toán thành công: " + amount);
@@ -8,6 +10,6 @@ public class BankTransferPayment implements IPaymentMethod {
 
     @Override
     public String getMethodName() {
-        return "Chuyển khoản ngân hàng";
+        return "Tiền mặt";
     }
 }
