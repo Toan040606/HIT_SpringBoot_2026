@@ -1,7 +1,9 @@
 package root.orderpayingsystem.service.impl;
 
+import org.springframework.stereotype.Component;
 import root.orderpayingsystem.service.IPaymentMethod;
 
+@Component("bankTransfer")
 public class BankTransferPayment implements IPaymentMethod {
     @Override
     public void pay(double amount) {

@@ -1,7 +1,11 @@
 package root.orderpayingsystem.service.impl;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 import root.orderpayingsystem.service.IPaymentMethod;
 
+@Component("Cash")
+@Primary
 public class CashPayment implements IPaymentMethod {
     @Override
     public void pay(double amount) {
