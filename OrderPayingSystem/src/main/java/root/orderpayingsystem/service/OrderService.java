@@ -1,10 +1,19 @@
 package root.orderpayingsystem.service;
 
-public class OrderService {
-    private final IPaymentMethod paymentMethod;
-    private final INotificationService notificationService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
-    public OrderService(IPaymentMethod paymentMethod, INotificationService notificationService) {
+@Component
+public class OrderService {
+    @Autowired
+    private IPaymentMethod paymentMethod;
+
+    @Autowired
+    private INotificationService notificationService;
+
+    public OrderService(@Qualifier("Cash") IPaymentMethod paymentMethod,
+                        @Qualifier("email") INotificationService notificationService) {
         this.paymentMethod = paymentMethod;
         this.notificationService = notificationService;
     }
