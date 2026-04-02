@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: StudentManagementAPI
+
+  Jackson:
+    serialization:
+      indent-output: true
+
+server:
+  port: 2000
+logging:
+  level:
+    root: info
